@@ -1,12 +1,10 @@
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point
  *
- * Return: 0 after excuting the function
- *
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	char a;
