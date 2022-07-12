@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- *main - Entry point
- *Description - changes values of a variable 
- *Return: Always 0
+ *reset_to_98 - is a function to change reference of variable
+ *@n: pointer to n to be changed
  */
 void reset_to_98(int *n)
 {
