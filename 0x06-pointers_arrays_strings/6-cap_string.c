@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *cap_string - a  function that changes everything to caps
- *@x: parameter1
- *Return: string
+ * cap_string - a  function that changes everything to caps
+ * @x: parameter1
+ * Return: string
  */
 char *cap_string(char *x)
 {
