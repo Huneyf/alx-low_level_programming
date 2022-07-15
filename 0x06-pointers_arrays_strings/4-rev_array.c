@@ -1,12 +1,13 @@
 #include "main.h"
+
 /**
- * reverse_array - is a function tha reverse array order
- * @a: array
- * @n: element of array a
- */
+* reverse_array -> reversing an array
+* @a: array a
+* @n: an element of an array
+*/
 void reverse_array(int *a, int n)
 {
-int *p, aux, i, k;
+int *p, i, aux, k;
 p = a;
 for (i = 0; i < n; i++)
 p++;
