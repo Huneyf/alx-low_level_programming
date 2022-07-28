@@ -31,8 +31,3 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	return (mem);
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-
