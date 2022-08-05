@@ -1,26 +1,24 @@
-#include <stdio.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
+#include <stdarg.h>
 
 /**
- * sum_them_all- is a function that adds up any number of functions.
- * @n: any Number of intigers
- * Returns: sum of all numbers
+ * sum_them_all -  sum all arguments
+ * @n: int, number of undefined arguments
+ *
+ * Return: sum of args
+ * On error, 0 is returned
  */
 
 int sum_them_all(const unsigned int n, ...)
 {
-        va_list ap;
-        va_start (ap, n);
-        unsigned int i, sum = 0;
-	for (i = 0; i < n; i++)
-	{
-		sum = sum + va_arg (ap, unsigned int);
-		if (n == 0)
-		{
-			return (0);
-		}
-	}
-        va_end (ap);
-        return (sum);
+va_list list;
+unsigned int i, sum = 0;
+
+va_start(list, n);
+if (n != 0)
+	for (i = 0; i < n; sum += va_arg(list, unsigned int), i++)
+	;
+va_end(list);
+
+return (sum);
 }
